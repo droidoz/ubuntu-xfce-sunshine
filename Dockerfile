@@ -88,6 +88,7 @@ RUN dpkg --add-architecture i386 && \
         wine \
         winetricks \
         zenity && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # ------------------------------------------------------------
 # Create runtime directories
